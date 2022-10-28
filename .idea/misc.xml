@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Dell/Desktop/Printing Label front and backend/labelprinter/app/src/main/res/layout/print_label.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/Dell/Desktop/labelprinter/app/src/main/res/layout/activity_character_set_selection.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/Dell/Desktop/labelprinter/app/src/main/res/layout/activity_main.xml" value="0.2713541666666667" />
+        <entry key="..\:/Users/Dell/Desktop/labelprinter/app/src/main/res/layout/dialog_set_rfid_password.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Dell/Desktop/labelprinter/app/src/main/res/layout/layout_textview.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Dell/Desktop/labelprinter/app/src/main/res/layout/network_settings.xml" value="0.2713541666666667" />
+        <entry key="..\:/Users/Dell/Desktop/labelprinter/app/src/main/res/layout/print_label.xml" value="0.2713541666666667" />
+        <entry key="..\:/Users/Dell/Desktop/labelprinter/app/src/main/res/menu/activity_character_set_selection.xml" value="0.2713541666666667" />
+        <entry key="..\:/Users/Dell/Desktop/labelprinter/app/src/main/res/menu/activity_main.xml" value="0.2713541666666667" />
+        <entry key="..\:/Users/Dell/Desktop/labelprinter/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2875" />
+        <entry key="..\:/Users/George Eftichiou/Desktop/Pending Projects/Printing Label front and backend/LabelPrinterAndroid/app/src/main/res/layout/network_settings.xml" value="0.10260416666666666" />
+        <entry key="..\:/Users/George Eftichiou/Desktop/Printing Label front and backend/LabelPrinterAndroid/app/src/main/res/drawable/button.xml" value="0.1" />
+        <entry key="..\:/Users/George Eftichiou/Desktop/Printing Label front and backend/LabelPrinterAndroid/app/src/main/res/drawable/print_button.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/George Eftichiou/Desktop/Printing Label front and backend/LabelPrinterAndroid/app/src/main/res/drawable/print_button_normal.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/George Eftichiou/Desktop/Printing Label front and backend/LabelPrinterAndroid/app/src/main/res/drawable/print_button_pressed.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/George Eftichiou/Desktop/Printing Label front and backend/LabelPrinterAndroid/app/src/main/res/drawable/roundebutton.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/George Eftichiou/Desktop/Printing Label front and backend/LabelPrinterAndroid/app/src/main/res/drawable/roundedbuttonpressed.xml" value="0.1" />
+        <entry key="..\:/Users/George Eftichiou/Desktop/Printing Label front and backend/LabelPrinterAndroid/app/src/main/res/layout/custom_dialog.xml" value="0.33" />
+        <entry key="..\:/Users/George Eftichiou/Desktop/Printing Label front and backend/LabelPrinterAndroid/app/src/main/res/layout/layout_textview.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/George Eftichiou/Desktop/Printing Label front and backend/LabelPrinterAndroid/app/src/main/res/layout/network_settings.xml" value="0.18" />
+        <entry key="..\:/Users/George Eftichiou/Desktop/Printing Label front and backend/LabelPrinterAndroid/app/src/main/res/layout/print_label.xml" value="0.22" />
+        <entry key="..\:/Users/Giorgos/Desktop/Pending Projects/Printing Label front and backend/LabelPrinterAndroid/app/src/main/res/layout/activity_main.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/Giorgos/Desktop/Pending Projects/Printing Label front and backend/LabelPrinterAndroid/app/src/main/res/layout/custom_dialog.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/Giorgos/Desktop/Pending Projects/Printing Label front and backend/LabelPrinterAndroid/app/src/main/res/layout/network_settings.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/Giorgos/Desktop/Pending Projects/Printing Label front and backend/LabelPrinterAndroid/app/src/main/res/layout/print_label.xml" value="1.0" />
+        <entry key="..\:/Users/Giorgos/Desktop/Pending Projects/Printing Label front and backend/LabelPrinterAndroid/app/src/main/res/layout/register.xml" value="0.27219202898550726" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
