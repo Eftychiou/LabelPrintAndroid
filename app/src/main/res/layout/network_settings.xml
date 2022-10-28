@@ -1,82 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-    <LinearLayout
-        android:id="@+id/top"
+    <EditText
+        android:id="@+id/server_ip"
         android:layout_width="fill_parent"
-        android:layout_height="200dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_height="70dp"
+        android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical">
+        android:hint="Enter Server Ip"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-
-        <EditText
-            android:id="@+id/server_ip"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:inputType="text"
-            android:hint="Enter Server Ip" />
-
-        <EditText
-            android:id="@+id/server_port"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:inputType="number"
-            android:hint="Enter Server Port" />
-
-
-    </LinearLayout>
+    <EditText
+        android:id="@+id/server_port"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:hint="Enter Server Port"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/server_ip"
+        app:layout_constraintVertical_bias="0.0" />
 
 
     <TextView
         android:id="@+id/response"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_below="@+id/top"
-        android:layout_marginTop="20dp"
-        android:autoSizeMaxTextSize="100sp"
-        android:autoSizeMinTextSize="12sp"
-        android:autoSizeStepGranularity="2sp"
-        android:autoSizeTextType="uniform"
-
+        android:layout_height="80sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
         android:gravity="center"
         android:textColor="@android:color/white"
-        android:textSize="20sp" />
-
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/server_port"
+        app:layout_constraintVertical_bias="0.409" />
 
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_below="@+id/response"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:gravity="bottom"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/response"
+        app:layout_constraintVertical_bias="1.0">
 
         <Button
             android:id="@+id/test_connection"
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:textColor="@color/white"
             android:background="@drawable/button"
-            android:text="Ping Server" />
-
+            android:text="Ping Server"
+            android:textColor="@color/white" />
         <Button
             android:id="@+id/load_data"
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:textColor="@color/white"
@@ -86,15 +90,16 @@
         <Button
             android:id="@+id/save_ip_port"
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:textColor="@color/white"
             android:background="@drawable/button"
             android:text="Save Server" />
 
+
     </LinearLayout>
 
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
 

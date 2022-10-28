@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
-
     android:layout_height="fill_parent">
 
 
     <EditText
         android:id="@+id/barcode"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="80sp"
         android:hint="BarCode"
-        android:inputType="text" />
-
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:gravity="center"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <RadioGroup
         android:id="@+id/units"
@@ -24,7 +29,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/barcode"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barcode"
+        app:layout_constraintVertical_bias="0.06">
 
 
         <RadioButton
@@ -58,15 +69,19 @@
             android:text="m²" />
     </RadioGroup>
 
-
     <LinearLayout
         android:id="@+id/unit_inputs"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/units"
-        android:layout_marginTop="10dp"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/units"
+        app:layout_constraintVertical_bias="0.0">
 
         <EditText
             android:id="@+id/quantity"
@@ -84,99 +99,97 @@
             android:layout_height="fill_parent"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-
             android:layout_toRightOf="@+id/quantity"
             android:gravity="center"
             android:hint="Unit Size"
             android:inputType="numberDecimal" />
-
-
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/unit_outputs"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/unit_inputs"
-        android:layout_marginTop="50dp"
-        android:gravity="center_horizontal"
-        android:textColor="@android:color/black"
-        android:textSize="20sp" />
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unit_inputs">
 
-    <TextView
-        android:id="@+id/price"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/description"
-        android:layout_marginTop="10dp"
-        android:gravity="center_horizontal"
-        android:textColor="@android:color/black"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/stock"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/price"
-        android:layout_marginTop="10dp"
-        android:gravity="center_horizontal"
-        android:textColor="@android:color/black"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/measure"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/stock"
-        android:layout_marginTop="10dp"
-        android:gravity="center_horizontal"
-        android:textColor="@android:color/black"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/measure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
 
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/measure"
-        android:layout_centerHorizontal="true"
-        android:gravity="bottom"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unit_outputs"
+        app:layout_constraintVertical_bias="1.0">
 
 
         <Button
             android:id="@+id/search"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
-
             android:background="@drawable/button"
             android:text="Search"
             android:textColor="@color/white" />
 
         <Button
             android:id="@+id/print"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/print_button"
             android:text="Print"
-            android:textColor="@color/white"
-            android:textSize="30dp" />
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/clean"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/button"
             android:text="Clean"
             android:textColor="@color/white" />
     </LinearLayout>
-
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
 
