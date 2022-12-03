@@ -38,13 +38,13 @@
         app:layout_constraintVertical_bias="0.06">
 
 
+
         <RadioButton
-            android:id="@+id/pcs"
+            android:id="@+id/g"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
             android:onClick="checkButton"
-            android:text="pcs" />
+            android:text="g" />
 
         <RadioButton
             android:id="@+id/ml"
@@ -54,11 +54,16 @@
             android:text="ml" />
 
         <RadioButton
-            android:id="@+id/g"
+            android:id="@+id/pcs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:onClick="checkButton"
-            android:text="g" />
+            android:text="pcs" />
+
+
+
+
 
 
         <RadioButton
@@ -188,7 +193,7 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/button"
-            android:text="Clean"
+            android:text="Clear"
             android:textColor="@color/white" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

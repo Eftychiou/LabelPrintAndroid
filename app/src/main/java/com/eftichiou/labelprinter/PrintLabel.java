@@ -67,7 +67,7 @@ public class PrintLabel extends Activity {
         mQueue = Volley.newRequestQueue(this);
         quantity = findViewById(R.id.quantity);
         size = findViewById(R.id.size);
-        tools= new Tools(this);
+        tools = new Tools(this);
 
         MainActivity.mBixolonLabelPrinter.setCharacterSet(BixolonLabelPrinter.INTERNATIONAL_CHARACTER_SET_USA, BixolonLabelPrinter.CODE_PAGE_WCP1253_GREEK);
         MainActivity.mBixolonLabelPrinter.setCutterPosition(0);
@@ -83,7 +83,7 @@ public class PrintLabel extends Activity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.length() != 0 && item!=null &&item.getPrice() != null) {
+                if (s.length() != 0 && item != null && item.getPrice() != null) {
                     generateMeasureMessage();
                     measure.setText(measureMsg);
                 }
@@ -101,7 +101,7 @@ public class PrintLabel extends Activity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.length() != 0 && item!=null &&item.getPrice() != null) {
+                if (s.length() != 0 && item != null && item.getPrice() != null) {
                     generateMeasureMessage();
                     measure.setText(measureMsg);
                 }
@@ -124,6 +124,7 @@ public class PrintLabel extends Activity {
                     tools.playFailSound();
                     return;
                 }
+
                 if (item != null) {
                     tools.playSound();
                     MainActivity.mBixolonLabelPrinter.beginTransactionPrint();
@@ -133,12 +134,12 @@ public class PrintLabel extends Activity {
                     MainActivity.mBixolonLabelPrinter.drawText(measureMsg, 110, 335, BixolonLabelPrinter.FONT_SIZE_10, 1, 1, 0, BixolonLabelPrinter.ROTATION_90_DEGREES, false, false, BixolonLabelPrinter.TEXT_ALIGNMENT_NONE);
                     MainActivity.mBixolonLabelPrinter.print(1, 1);
                     MainActivity.mBixolonLabelPrinter.endTransactionPrint();
+                    clearViews();
                 } else {
                     showMessage("Scan an item first");
                     tools.playFailSound();
                 }
             }
-
 
         });
 
@@ -218,7 +219,6 @@ public class PrintLabel extends Activity {
 
         }
     }
-
 
     public void generateMeasureMessage() {
         int radioId = radioGroup.getCheckedRadioButtonId();
